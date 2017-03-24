@@ -1,0 +1,42 @@
+Hands-on
+
+API Code Generation (Either Python/PHP, Database: MySQL, output on webpage)
+
+Objective:
+
+        Generate random data on database, from there print on csv file according to user input.
+
+Steps:
+
+        -create table on database “Sample_code” (id, code_, status)
+
+        - Add a method which generates a code with cand insert into ‘code_’ field. (by default, ‘status’ will be 0)
+
+        - (This is for testing, how you fill up depends on you) load the code table with random data about 5-10 lakhs of Data.
+
+        - Create a method “generate_code (‘quantity’,’ file’, ‘column_number’) ” , ‘quantity’ will take a number input, ‘file’ will be name of a file, ‘column_number’ will be a number from 1-6.
+
+        -inside the method first from ‘Sample_code’ table, ‘quantity’ input number of data will be fetched whose ‘status’ is 0
+
+        -A csv file will be created with the name ‘file’ input.
+
+        - these collection of data will be printed on the csv based on the number of ‘column_number’ with a message- ‘Your code is “code_string”’
+
+        -After date those data which are fetched and printed will be updated on ‘Sample_code’ field as ‘status’ from 0 to 1.
+
+        -From the initial of the code portion on “generate_code” table to last of portion a time counter will be added.
+
+               - input will be generate_code parameters in web form.
+
+        -output will be successful file print on csv file and the output of the time.
+
+Sample input
+
+        1000 3 ‘file1.csv’
+
+Sample output
+
+        (Along with the file stored on the directory ,output on browser)         
+
+Time taken 5ms
+
